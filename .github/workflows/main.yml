@@ -1,0 +1,10 @@
+name: CI
+on: push
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - run: |
+        sudo apt-get install epubcheck
